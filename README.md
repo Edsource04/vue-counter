@@ -27,3 +27,13 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### build on docker Desktop
+
+```sh
+docker build -t "vue-app" .
+from the directory where Docker file is located
+this create an image
+docker run -p 5000:8080 vue-app
+to run a container where published vue app will be served
+```
